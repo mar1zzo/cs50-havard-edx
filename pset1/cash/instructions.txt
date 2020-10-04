@@ -1,0 +1,23 @@
+Implemente um programa que primeiro pergunta ao usuário quanto do troco é devido e 
+depois imprime o número mínimo de moedas com o qual essa troca pode ser feita.
+
+1) Use get_floatpara obter a entrada do usuário e printfpara produzir sua resposta. 
+Suponha que as únicas moedas disponíveis sejam quartos (25 ¢), dez centavos (10 ¢), 
+nickels (5 ¢) e centavos (1 ¢).
+
+2) Você não precisa tentar verificar se a entrada de um usuário é muito grande para caber em um float. 
+Usar get_float sozinho garantirá que a entrada do usuário seja realmente um valor de ponto flutuante (ou integral), 
+mas não que seja não negativo.
+Se o usuário não fornecer um valor não negativo, seu programa deve solicitar novamente ao usuário um valor válido 
+até que o usuário concorde.
+Para que possamos automatizar alguns testes do seu código, certifique-se de que a última linha de saída do seu 
+programa seja apenas o número mínimo de moedas possível: um inteiro seguido por \n.
+
+3) Cuidado com a imprecisão inerente aos valores de ponto flutuante. Lembre-se floats.c da aula, onde, se x é 2 e y é 10, 
+x / y não é precisamente dois décimos! E, portanto, antes de fazer alterações, você provavelmente desejará converter 
+os dólares inseridos pelo usuário em centavos (ou seja, de a float para an int) para evitar pequenos erros que 
+poderiam se acumular!
+Tome cuidado para arredondar seus centavos para o centavo mais próximo, como com round, que é declarado em math.h. 
+Por exemplo, se dollars é um float com a entrada do usuário (por exemplo, 0.20), o código como >
+int cents = round(dollars * 100); 
+>irá converter com segurança 0.20(ou mesmo 0.200000002980232238769531250) para 20.

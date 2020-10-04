@@ -1,0 +1,6 @@
+// Mario World Pyramid
+
+Request user height of the pyramid between 1 and 8
+If the height for less than 1 and greater than 8, go back one step
+Iterate from 1 ate the height of the pyramid
+    print hashes equal to the iteration number, and include a line

@@ -1,0 +1,31 @@
+1. solicite um numero ao usuario
+
+2. verifique se eh um numero valido
+
+3. calcular quantas moedas de 25 cents podem ser retornadas
+    > armazenar qtde
+    > sobrou dinheiro? 
+        S>goto> step 4
+        N>goto> step 7
+
+4. calcular quantas moedas de 10 cents podem ser retornadas
+    > armazenar qtde
+    > sobrou dinheiro? 
+        S>goto> step 5
+        N>goto> step 7
+
+5. calcular quantas moedas de 5 cents podem ser retornadas
+    > armazenar qtde
+    > sobrou dinheiro? 
+        S>goto> step 6
+        N>goto> step 7
+
+6. calcular quantas moedas de 1 cents podem ser retornadas
+    > armazenar qtde de moedas
+    > sobrou dinheiro? 
+        S>goto> step 3
+        N>goto> step 7
+
+7. Somar o total-moedas
+
+8. Imprima total-moeda
