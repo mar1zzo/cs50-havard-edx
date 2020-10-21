@@ -1,0 +1,4 @@
+1. prompt for input.
+2. calculate checksum.
+3. check for card length and start digits.
+4. print AMEX, MASTERCARD, VISA OR INVALID.
