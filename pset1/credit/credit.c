@@ -95,7 +95,7 @@ int main(void)
                 }
                 else if (strlen(str) == 16 && twoI >= 51 && twoI <= 55)
                 {
-                    //MASTERCARD
+                    //validate MASTERCARD
                     //16 digits, stars 51, 52, 53, 54 or 55
                     printf("MASTERCARD\n");
                 }
