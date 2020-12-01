@@ -1,0 +1,32 @@
+.section{
+    padding: 2%;
+}
+
+.picture-zoom img{
+    border-style: outset;
+    border-radius: 0px;
+}
+
+#page_base {
+    margin: 5%;
+    text-align: justify;
+}
+
+#page_base em {
+    color: red;
+}
+
+footer {
+    margin: 5%;
+    text-align: right;
+}
+
+
+@media screen and (max-width: 500px){
+
+    #page_base h1{
+        text-align: left;
+        font-size: 2rem;
+    }
+
+}

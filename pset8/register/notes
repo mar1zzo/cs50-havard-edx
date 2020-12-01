@@ -1,0 +1,24 @@
+### Dicas de comandos basicos
+http://pythonclub.com.br/guia-rapido-comandos-sqlite3.html
+
+
+### Para acessar o banco de dados, execute o codigo abaixo no terminal
+$ sqlite3 lecture.db
+
+### sair do SQLite no terminal
+$ .exit
+
+
+### Criando uma tabela
+CREATE TABLE 'registrants' (
+    'id' INTEGER PRIMARY KEY,
+    'name' VARCHAR(255),
+    'email' VARCHAR(255)
+    );
+
+### Selecionando dados da tabela
+SELECT * FROM registrants;
+
+### Inserindo dados na tabela
+INSERT INTO registrants (name, email) VALUES ('Alice', 'alice@example.com');
+INSERT INTO registrants (name, email) VALUES ('Bob', 'bob@example.com');

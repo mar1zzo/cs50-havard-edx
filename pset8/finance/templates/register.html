@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/register" method="post">
+        <div class="form-group">
+            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Must contain min 6 and max 20 and characters, only a-z, A-Z, _ and 0-9">
+                <input autocomplete="off" autofocus class="form-control" id="username" name="username" placeholder="Username" type="text">
+            </span>
+        </div>
+        <div class="form-group">
+            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Must contain at least 8 characters and including a letter and a number">
+                <input class="form-control" id="password" name="password" placeholder="Password" type="password">
+             </span>
+        </div>
+        <div class="form-group">
+            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Must contain at least 8 characters and including a letter and a number">
+                <input class="form-control" id="confirmation" name="confirmation" placeholder="Confirmation" type="password">
+             </span>
+        </div>
+        <button class="btn btn-primary" id="submit" type="submit">Register</button>
+    </form>
+
+    <script>
+    // checks if the passwords typed are at least 8 characters long and contain only alphanumeric characters
+        document.querySelector('#submit').disabled = true;
+
+        document.querySelector('#username').onkeyup = function() {
+            let username = document.querySelector('#username').value;
+
+            // font by: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
+            if (username.match(/^[A-Za-z0-9_]{6,30}$/)) {
+                document.querySelector('#submit').disabled = false;
+            }
+            else {
+                document.querySelector('#submit').disabled = true;
+            }
+        }
+
+        document.querySelector('#password').onkeyup = function() {
+            let password = document.querySelector('#password').value;
+
+            // font by: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
+            if (password.length > 7 && password.match(/^[0-9a-z]+$/i) && password.match(/\d/) && password.match(/[a-z]/i)){
+                document.querySelector('#submit').disabled = false;
+            } else {
+                document.querySelector('#submit').disabled = true;
+            }
+        }
+
+        document.querySelector('#confirmation').onkeyup = function() {
+            let confirmation = document.querySelector('#confirmation').value;
+
+            // font by: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
+            if (confirmation.length > 7 && confirmation.match(/^[0-9a-z]+$/i) && confirmation.match(/\d/) && confirmation.match(/[a-z]/i)){
+                document.querySelector('#submit').disabled = false;
+            }
+            else {
+                document.querySelector('#submit').disabled = true;
+            }
+        }
+    </script>
+{% endblock %}

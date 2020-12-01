@@ -1,0 +1,57 @@
+body {
+    background: rgb(70, 142, 236);
+    font: normal 1rem Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+div {
+    text-align: center;
+    padding: 5px;
+}
+
+img{
+    width: 350px;
+    height: 240px;
+}
+
+footer {
+    margin: auto;
+    padding-top: 2%;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+@media screen and (max-width: 500px){
+
+    section {
+        width: 90%;
+        margin: auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    }
+
+    div {
+        text-align: center;
+        padding: 0px;
+    }
+
+    img{
+        width: 80%;
+        height: 50%;
+    }
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/person-bounding-box.svg" type="image/png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>Projects</title>
+    <link rel="stylesheet" href="./css/page_project_style.css">
+</head>
+<body onload="load()">
+    <header>
+        <div class="alert alert-info" role="alert">
+            Click <a href="../index.html" class="alert-link">here</a> to return to the homepage.
+        </div>
+        <h1>This is CS50</h1>
+        <h5>My first project with HTML, CSS and JS</h5>
+        <br>
+        <p>
+            <select name="numbers" id="select" size="1" onchange="load()">
+                <option value="0">Week 0</option>
+                <option value="1">Week 1</option>
+                <option value="2">Week 2</option>
+                <option value="3">Week 3</option>
+                <option value="4">Week 4</option>
+                <option value="5">Week 5</option>
+                <option value="6">Week 6</option>
+                <option value="7">Week 7</option>
+                <option value="8" selected>Week 8</option>
+            </select>
+        </p>
+        <br>
+    </header>
+    <section>
+        <div id="msg">
+            Message...
+        </div>
+        <div>
+            <a id="link" href="https://cs50.harvard.edu/x/2020/tracks/">
+                <img id="image" src="./images/week8.png" alt="Foto do dia">
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>by Mari Rizzo</p>
+    </footer>
+    <script src="./js/page_project_script.js"></script>
+</body>
+</html>
