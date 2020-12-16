@@ -15,7 +15,7 @@
    <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
-> Status do Projeto: :heavy_check_mark: :warning: (concluido)
+> Status do Projeto: :heavy_check_mark:(concluido)
 
 
 
@@ -89,9 +89,11 @@
 ## Pré-requisitos ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)
 
 
-:warning: [Python 3](https://www.python.org/downloads/)
+:	check mark button : [Python 3](https://www.python.org/downloads/)
 
-:warning: [Flask](https://flask-ptbr.readthedocs.io/en/latest/installation.html)
+: check mark button : [Flask](https://flask-ptbr.readthedocs.io/en/latest/installation.html)
+
+: check mark button : [SQlite3] (https://www.sqlite.org/download.html)
 
 
 
@@ -108,20 +110,18 @@ git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
 Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
 
 
-
-## Como rodar os testes ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)
-
-Coloque um passo a passo para executar os testes
-
-```
-$ npm test, rspec, etc 
-```
-
-
-
 ## Iniciando/Configurando banco de dados ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)
 
-Se for necessário configurar algo antes de iniciar o banco de dados insira os comandos a serem executados 
+
+### Modelagem:
+![db_table_subjects](https://user-images.githubusercontent.com/69127182/102381216-b5f8c580-3fa7-11eb-9cdf-3ebc508976fd.png)
+
+### tabelas de conteúdo padrão
+: calendar : Dias da semana:
+![db_table_weekdays](https://user-images.githubusercontent.com/69127182/102381223-b7c28900-3fa7-11eb-9a10-79c5506c4a51.png)
+
+: light bulb : Abordagens:
+![db_therapy](https://user-images.githubusercontent.com/69127182/102381226-b85b1f80-3fa7-11eb-97d4-412743ec8772.png)
 
 
 
