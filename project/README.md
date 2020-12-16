@@ -52,7 +52,7 @@
 ## Layout :computer:
 
 ### Abertura do site:
-![index](https://user-images.githubusercontent.com/69127182/102272895-424fad80-3f00-11eb-955c-fb69ffaa670e.png)
+![principal](https://user-images.githubusercontent.com/69127182/102402933-447b4000-3fc4-11eb-961a-d714a7a2703c.png)
 
 
 
@@ -69,7 +69,7 @@
 
 
 ### Resultado - Preenchimento incorreto do cadastro: :point_down:
-![give-alert](https://user-images.githubusercontent.com/69127182/102273590-521bc180-3f01-11eb-99b1-9af33494cca3.png)
+![give-message](https://user-images.githubusercontent.com/69127182/102403121-902de980-3fc4-11eb-8b06-53fc34c53a63.png)
 
 
 
