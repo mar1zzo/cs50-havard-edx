@@ -58,7 +58,7 @@
 
 ### Cadastro de profissionais habilitados: :white_check_mark:
 ![give](https://user-images.githubusercontent.com/69127182/102402082-07fb1480-3fc3-11eb-8d36-dc48541866ec.png)
-![give-2](https://user-images.githubusercontent.com/69127182/102273170-aecaac80-3f00-11eb-9e00-5fef395176e0.png)
+![give-middle](https://user-images.githubusercontent.com/69127182/102402672-e77f8a00-3fc3-11eb-99e6-1de93a325861.png)
 ![give-final](https://user-images.githubusercontent.com/69127182/102402498-9b344a00-3fc3-11eb-9782-2464e82d8d98.png)
 
 
