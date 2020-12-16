@@ -35,7 +35,7 @@
 ## Descrição do projeto :mega:
 
 <p align="justify">
-  Plataforma web para conectar psicólogos profissionais e pacientes. 
+  :fox_face: &nbsp; Plataforma web para conectar psicólogos profissionais e pacientes. 
 </p>
 
 
@@ -54,30 +54,30 @@
 
 
 
-### Cadastro de profissionais habilitados:
+### Cadastro de profissionais habilitados: :white_check_mark:
 ![give-1](https://user-images.githubusercontent.com/69127182/102273172-affbd980-3f00-11eb-8472-64dbadea6ea3.png)
 ![give-2](https://user-images.githubusercontent.com/69127182/102273170-aecaac80-3f00-11eb-9e00-5fef395176e0.png)
 ![give-3](https://user-images.githubusercontent.com/69127182/102273167-ad00e900-3f00-11eb-8df7-4195c199cce7.png)
 
 
 
-### - Resultado de cadastro com sucesso:
+### Resultado de cadastro com sucesso: :point_down:
 ![sucess](https://user-images.githubusercontent.com/69127182/102273247-ca35b780-3f00-11eb-9f51-e23223aecbab.png)
 
 
 
-### - Resultado caso houver problemas no cadastro:
+### Resultado caso houver problemas no cadastro: :point_down:
 ![give-alert](https://user-images.githubusercontent.com/69127182/102273590-521bc180-3f01-11eb-99b1-9af33494cca3.png)
 
 
 
-### Consulta de profissionais cadastrados na plataforma:
-### - Resultado com conteúdo:
+### Consulta de profissionais cadastrados na plataforma: :white_check_mark:
+### Resultado com conteúdo: :point_down:
 ![search-one](https://user-images.githubusercontent.com/69127182/102273008-6e6b2e80-3f00-11eb-9cbd-de1a916dec81.png)
 
 
 
-### - Resultado sem conteúdo:
+### Resultado sem conteúdo: :point_down:
 ![search-empty](https://user-images.githubusercontent.com/69127182/102273056-8347c200-3f00-11eb-9935-6f93416e5364.png)
 
 
