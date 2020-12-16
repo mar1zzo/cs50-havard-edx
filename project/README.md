@@ -28,6 +28,8 @@
 
 ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)  [Como rodar a aplicação](#Como-rodar-a-aplicação-movie_camera)
 
+![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)  [Futuro](#Futuro-satellite)
+
 ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)  [Licença](#Licença-bookmark)
 
 
@@ -126,6 +128,13 @@
 5. CS50 library
 6. Baixe o projeto
 
+## Futuro :satellite:
+- Módulo Adminstrativo
+    - login e senha, possibilidade de alteração de dados do cadastro pelo profissional
+- Módulo Segurança
+    - API com CFP (Conselho Federal de Psicologia) para validação de licença profissional
+- Módulo Agenda
+    - Permitir cadastro de horários disponíveis
 
 ## Licença :bookmark:
 
