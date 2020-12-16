@@ -57,7 +57,7 @@
 
 
 ### Cadastro de profissionais habilitados: :white_check_mark:
-![give-1](https://user-images.githubusercontent.com/69127182/102273172-affbd980-3f00-11eb-8472-64dbadea6ea3.png)
+![give](https://user-images.githubusercontent.com/69127182/102402082-07fb1480-3fc3-11eb-8d36-dc48541866ec.png)
 ![give-2](https://user-images.githubusercontent.com/69127182/102273170-aecaac80-3f00-11eb-9e00-5fef395176e0.png)
 ![give-3](https://user-images.githubusercontent.com/69127182/102273167-ad00e900-3f00-11eb-8df7-4195c199cce7.png)
 
@@ -88,7 +88,7 @@
 ## Layout responsivo :iphone:
 ![layout-responsivo](https://user-images.githubusercontent.com/69127182/102388676-d8dba780-3fb0-11eb-8a44-63e494b77a15.png)
 ![layout1](https://user-images.githubusercontent.com/69127182/102388860-193b2580-3fb1-11eb-93bd-6124f75bb181.png)
-![layout2](https://user-images.githubusercontent.com/69127182/102388870-1c361600-3fb1-11eb-9725-f87b6e3b8d8a.png)
+![layout-give](https://user-images.githubusercontent.com/69127182/102402074-0598ba80-3fc3-11eb-9bab-749b1aac506a.png)
 
 ## Pré-requisitos :link:
 
