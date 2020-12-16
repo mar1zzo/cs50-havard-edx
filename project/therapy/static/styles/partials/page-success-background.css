@@ -1,0 +1,108 @@
+html {
+    border: 0;
+    padding: 0;
+}
+
+#page-success-background {
+    background: #FF5500;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+#page-success-background #container{
+    color: #FFC7A5;
+    padding: 10%;
+    margin: auto;
+}
+
+/*.logo-container img {*/
+/*    border: 1rem double yellow;*/
+    /*margin: auto;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+
+    /*position: absolute;*/
+    /*width: 1119.2px;*/
+    /*height: 561px;*/
+    /*left: 160.8px;*/
+    /*top: 122.82px;*/
+/*}*/
+
+.text-container {
+    /*border: 1rem double green;*/
+    text-align: center;
+    margin: auto;
+}
+
+.text-container h1{
+    font: 700 4rem Poppins;
+    color: #FFFFFF;
+}
+
+.text-container h2{
+    font: 700 1.5rem Poppins;
+    color: #FFC7A5;
+}
+
+.buttons-container {
+    /*border: 1rem double blue;*/
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-container a {
+    width: 176px;
+    height: 56px;
+    margin-right: 2rem;
+
+    border-radius: .8rem; /* arredondar as bordas - perquisar arredondar somente uma borda*/
+
+    font: 700 .8rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: background 0.2s;
+
+    color: #FFFFFF;
+}
+
+.buttons-container a.study {
+    background: #246FE8;
+}
+
+.buttons-container a.study:hover {
+    background: #2258AF;
+}
+
+.buttons-container a.give {
+    background: #04D361;
+    margin-right: 0;
+
+}
+
+.buttons-container a.give:hover {
+    background: #04BF58;
+}
+
+@media (max-width: 500px) {
+    .text-container h1{
+        font: 700 3rem Poppins;
+        color: #FFFFFF;
+    }
+
+    .text-container h2{
+        font: 700 1rem Poppins;
+        color: #D4C2FF;
+        padding: 10px;
+    }
+}
+

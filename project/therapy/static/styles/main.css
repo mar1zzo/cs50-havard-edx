@@ -1,0 +1,101 @@
+/*
+
+    CSS - Cascading StyleSheet
+    Folha de estilo em cascata
+
+    Nota: Sobre Hierarquia de regras no CSS
+
+    1.Seletor de hashtag(#) eh o seletor mais forte, seguidamente eh Seletor da classe, por fim, o seletor de tag. Porem, a casacata eh considerada a regra mais forte.
+*/
+
+/*
+Elemento raiz do HTML inteiro
+
+-- esses tracinhos na frente transformam o comando em variaveis que podem ser usadas no codigo.
+*/
+:root {
+    /*
+    Variavel CSS
+    basta dar um clique no tipo da cor que as formas de apresentacao sao enumeradas: hexa, hsl, rgb **/
+    --color-background: #FF5500;
+    --color-primary-lighter: #246FE8; /*#9871F5;*/
+    --color-primary-light: #2258AF; /*#916BEA;*/
+    --color-primary: ;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #FFC7A5;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+
+    /*
+    Controle das medidas rem
+    Tamaho da fonte padrao:
+        Tipos: pixel (16px) - porcentagem (100%) - rem (1rm)
+        1rm eh equivalente a 100% e eh relativo a fonte setada aqui no root
+
+        Responsivo
+            px: unidade nao flexivel, usada mais para desktop
+            porcentagem (%) e rem sao mais usadas, pois sao flexiveis (responsiva), isto eh, se adapta a qq tamanho de tela
+    */
+    font-size: 60%;
+}
+
+/* Asterisco (*) Configura todo o documento*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh; /* altura */
+}
+
+
+body {
+
+    background: var(--color-background);
+    display: flex; /* vai mudar o comportamento padrao do html */
+        /* os itens abaixo soh funcionam com o display flex */
+        align-items: center;
+        justify-content: center;
+}
+
+
+body,
+input,
+button,
+textarea {
+    /* font: 500 1.6rem Poppins; */
+    font-weight: 500; /* Negrito */
+    font-family: Poppins; /* Tipo de fonte */
+    font-size: 1.6rem; /* tamanho da fonte */
+    color: var(--color-text-base);
+}
+    /*Box model: conceito de caixa que aplicamos no css*/
+
+
+#container {
+    width: 90vw; /* largura */
+    max-width: 700px; /* limite maxima da largura da borda da caixa */
+}
+
+@media (min-width: 700px) {
+
+    :root {
+        font-size: 62.5%; /* todo 1rem vai ser relativo a 10px */
+
+    }
+}
+

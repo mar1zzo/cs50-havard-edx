@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapy | Conecte-se com uma escuta atenta</title>
+
+    <link rel="shortcut icon" href="./static/images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="./static/styles/main.css">
+    <link rel="stylesheet" href="./static/styles/partials/header.css">
+    <link rel="stylesheet" href="./static/styles/partials/forms.css">
+    <link rel="stylesheet" href="./static/styles/partials/page-give.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+</head>
+
+
+<body id="page-give-classes">
+
+    <div id="container">
+        <!-- Cabecalho -->
+        <header class="page-header">
+            <div class="top-bar-container">
+
+                <a href="/">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm9.5 8.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z"/>
+                    </svg>
+                </a>
+
+                <img src="./static/images/logo.png" alt="Proffy">
+
+            </div>
+
+            <div class="header-content">
+                <strong>É incrível que você deseja fazer atendimentos gratuítos.</strong>
+                <p>O primeiro passo, é preencher esse formulário de inscrição</p>
+            </div>
+
+        </header>
+
+        <!-- Conteudo principal da pagina -->
+        <main>
+            <form action="/give" id="create-class" method="POST">
+                <fieldset>
+                    <legend>Seus dados</legend>
+
+                    <div class="input-block">
+                        <label for="name">Nome completo</label>
+                        <!-- "Required" faz com que o campo seja de preenchimento obrigatorio -->
+                        <input name="name" id="name" placeholder="Digite o nome completo" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="avatar">Link da sua foto
+                            <small>(comece com https://)</small>
+                        </label>
+                        <input name="avatar" id="avatar" type="url" placeholder="Cole aqui o link/endereço de sua foto" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="whatsapp">Whatsapp
+                            <small>(Use seu número de Whatsapp)</small>
+                        </label>
+                        <input name="whatsapp" id="whatsapp" type="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="Formato: xx-xxxxx-xxxx" required>
+                    </div>
+
+                    <div class="textarea-block">
+                        <label for="bio">Biografia</label>
+                        <!-- Nao dar espacamento entre a abertura da tag e o fechamento, pq ao fazer isso o cursor de dentro da caixa fica desconfigurado ex. "required></textarea>"-->
+                        <textarea name="bio" id="bio" placeholder="Fale um pouco sobre sua trajetória profissional" required></textarea>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sobre a abordagem de atendimento</legend>
+                    <div class="select-block">
+                        <label for="subject">Abordagem</label>
+                        <select name="subject" id="subject" required>
+                            <option disabled selected>Selecione uma opção</option>
+                            {% for subject in subjects %}
+                                <option value="{{ subject.id }}">{{ subject.title }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="cost"> CRP
+                            <small>(Se seu CRP não está ativo, regularize: https://site.cfp.org.br/)</small>
+                        </label>
+                        <input name="license" id="license" type="tel" pattern="[0-9]{2}/[0-9]{6}" placeholder="Formato: xx/xxxxxx" required>
+                    </div>
+                </fieldset>
+            </form>
+
+            <footer>
+                <p>
+                    <img src="./static/images/icons/warning.svg" alt="Aviso importante">
+                    Importante! <br>
+                    Preencha todos os dados
+                </p>
+                <button id="submit" type="submit" form="create-class">Salvar cadastro</button>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

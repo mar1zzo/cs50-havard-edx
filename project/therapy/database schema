@@ -1,0 +1,68 @@
+.schema
+
+delete from sqlite_sequence;
+delete from professional;
+delete from approaches;
+delete from therapy_schedule;
+
+drop table professional;
+drop table approaches;
+drop table therapy_schedule;
+
+CREATE TABLE sqlite_sequence(name,seq);
+
+CREATE TABLE "professional" (
+	"id"				INTEGER PRIMARY KEY AUTOINCREMENT,
+	"name"				TEXT,
+	"avatar"			TEXT,
+	"whatsapp"			TEXT,
+	"bio"				TEXT,
+	"subject_id"		INTEGER,
+	"subject_license"	TEXT
+);
+
+CREATE TABLE "approaches" (
+	"professional_id"	INTEGER,
+	"subject_id"	        INTEGER,
+	"license"	        TEXT,
+	"cost"	                TEXT
+);
+
+CREATE TABLE "therapy_schedule" (
+	"professional_id"	INTEGER,
+	"subject_id"	        INTEGER,
+	"weekday_id"	        INTEGER,
+	"time_from"	        INTEGER,
+	"time_to"	        INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS "subjects" (
+"id"INTEGER,
+"title"TEXT,
+PRIMARY KEY("id")
+);
+
+CREATE TABLE IF NOT EXISTS "weekdays" (
+"id"INTEGER,
+"weekday"TEXT,
+PRIMARY KEY("id")
+);
+
+INSERT INTO subjects (id, title) VALUES (0, 'Psicanálise');
+INSERT INTO subjects (id, title) VALUES (1, 'Análise Junguiana');
+INSERT INTO subjects (id, title) VALUES (2, 'Behaviorismo');
+INSERT INTO subjects (id, title) VALUES (3, 'Cognitivo-Comportamental');
+INSERT INTO subjects (id, title) VALUES (4, 'Humanismo');
+INSERT INTO subjects (id, title) VALUES (5, 'Gestalt-terapia');
+INSERT INTO subjects (id, title) VALUES (6, 'Grupo-terapia');
+INSERT INTO subjects (id, title) VALUES (7, 'Psicossomática');
+INSERT INTO subjects (id, title) VALUES (8, 'Fenomenológica');
+
+INSERT INTO weekdays (id, weekday) VALUES (0, 'Domingo');
+INSERT INTO weekdays (id, weekday) VALUES (1, 'Segunda-feira');
+INSERT INTO weekdays (id, weekday) VALUES (2, 'Terça-feira');
+INSERT INTO weekdays (id, weekday) VALUES (3, 'Quarta-feira');
+INSERT INTO weekdays (id, weekday) VALUES (4, 'Quinta-feira');
+INSERT INTO weekdays (id, weekday) VALUES (5, 'Sexta-feira');
+INSERT INTO weekdays (id, weekday) VALUES (6, 'Sábado');
+

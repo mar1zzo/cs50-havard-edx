@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Terapy | Conecte-se com uma escuta atenta</title>
+
+        <link rel="shortcut icon" href="./static/images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="./static/styles/main.css">
+        <link rel="stylesheet" href="./static/styles/partials/header.css">
+        <link rel="stylesheet" href="./static/styles/partials/forms.css">
+        <link rel="stylesheet" href="./static/styles/partials/page-search.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    </head>
+    <body id="page-study">
+
+        <div id="container">
+            <!-- Cabecalho -->
+            <header class="page-header">
+                <div class="top-bar-container">
+                    <a href="/">
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm9.5 8.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z"/>
+                        </svg>
+                    </a>
+
+                    <img src="./static/images/logo.png" alt="Proffy">
+                </div>
+                <div class="header-content">
+                    <strong>Esses são os profissionais disponíveis.</strong>
+                    <form action="/search" id="search-teachers" method="POST">
+                        <div class="select-block">
+                            <label for="subject">Abordagens</label>
+                                <select name="subject" id="subject" required>
+                                    <option disabled selected>Selecione uma opção</option>
+                                        {% for subject in subjects %}
+                                            <option value="{{ subject.id }}">{{ subject.title }}</option>
+                                        {% endfor %}
+                                </select>
+                        </div>
+                        <button id="submit" type="submit">Filtrar</button>
+                    </form>
+                </div>
+            </header>
+            <main>
+                {% if not professionals %}
+                <article class="teacher-item">
+                    <p id="no-results" class="no-results"> Nenhum profissional encontrado.</p>
+                </article>
+
+                {% else %}
+
+                    {% for professional in professionals %}
+                        <article class="teacher-item">
+                            <header>
+                                <img
+                                    src="{{ professional.avatar }}"
+                                    alt="Foto">
+                                <div>
+                                    <strong>{{ professional.name }}</strong>
+                                    <span>{{ professional.title }}</span>
+                                </div>
+                            </header>
+
+                            <p>{{ professional.bio }}</p>
+
+                            <footer>
+                                <p>Licença<strong>{{ professional.subject_license }}</strong>
+                                </p>
+                                    <a href="https://api.whatsapp.com/send?l=pt_BR&phone=55{{professional.whatsapp}}&text=Olá {{professional.name}}. Tenho interesse em fazer terapia na abordagem {{professional.title}}. Podemos conversar?" class="button" target="_blank">
+                                        <img src="./static/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato
+                                    </a>
+                            </footer>
+                        </article>
+                    {% endfor %}
+                {% endif %}
+            </main>
+        </div>
+    </body>
+</html>
