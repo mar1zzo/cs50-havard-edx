@@ -9,19 +9,18 @@
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=flask&message=framework&color=pink&style=for-the-badge&logo=flask"/>
-  <img src="https://img.shields.io/static/v1?label=python&message=code&color=blue&style=for-the-badge&logo=python"/>
+  <img src="https://img.shields.io/static/v1?label=python&message=language&color=blue&style=for-the-badge&logo=python"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-  <img src="http://img.shields.io/static/v1?label=testes&message=%3E100&color=GREEN&style=for-the-badge"/>
+</p>
+<p>
+  <img src="http://img.shields.io/static/v1?label=testes&message=100&color=GREEN&style=for-the-badge"/>
    <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
-
-> Status do Projeto: :heavy_check_mark:(concluido)
-
 
 
 ## Tópicos ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)
 
-:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
+:small_blue_diamond: [Descrição do projeto](#Descrição-do-projeto-favicon)
 
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
@@ -43,9 +42,9 @@
 
 ## Funcionalidades ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)
 
-:heavy_check_mark: Casdatro de profissionais habilitados
+:white_check_mark: Casdatro de profissionais habilitados
 
-:heavy_check_mark: Consulta de profissionais cadastrados
+:white_check_mark: Consulta de profissionais cadastrados
 
 
 
@@ -89,52 +88,44 @@
 ## Pré-requisitos ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)
 
 
-:	check mark button : [Python 3](https://www.python.org/downloads/)
+:ballot_box_with_check: [Python 3](https://www.python.org/downloads/)
 
-: check mark button : [Flask](https://flask-ptbr.readthedocs.io/en/latest/installation.html)
+:ballot_box_with_check: [Flask](https://flask-ptbr.readthedocs.io/en/latest/installation.html)
 
-: check mark button : [SQlite3] (https://www.sqlite.org/download.html)
-
-
-
-## Como rodar a aplicação :arrow_forward: ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)
-
-No terminal, clone o projeto: 
-
-```
-git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
-```
-
-... 
-
-Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
+:ballot_box_with_check: [SQlite3](https://www.sqlite.org/download.html)
 
 
 ## Iniciando/Configurando banco de dados ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)
 
 
-### Modelagem:
-![db_table_subjects](https://user-images.githubusercontent.com/69127182/102381216-b5f8c580-3fa7-11eb-9cdf-3ebc508976fd.png)
+### Estrutura geral: :triangular_ruler:
+![db_therapy](https://user-images.githubusercontent.com/69127182/102381226-b85b1f80-3fa7-11eb-97d4-412743ec8772.png)
+
 
 ### tabelas de conteúdo padrão
-: calendar : Dias da semana:
+#### Dias da semana: :calendar:
 ![db_table_weekdays](https://user-images.githubusercontent.com/69127182/102381223-b7c28900-3fa7-11eb-9a10-79c5506c4a51.png)
 
-: light bulb : Abordagens:
-![db_therapy](https://user-images.githubusercontent.com/69127182/102381226-b85b1f80-3fa7-11eb-97d4-412743ec8772.png)
+#### Abordagens: :clipboard:
+![db_table_subjects](https://user-images.githubusercontent.com/69127182/102381216-b5f8c580-3fa7-11eb-9cdf-3ebc508976fd.png)
 
 
 
 ## Linguagens, dependencias e libs utilizadas :books: ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)
 
-- [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
-- [React PDF](https://react-pdf.org/)
-
-...
-
-Liste as tecnologias utilizadas no projeto que **não** forem reconhecidas pelo Github 
+:pushpin: [CS50 library](https://cs50.stackexchange.com/questions/7291/how-do-i-install-the-cs50-library-to-my-local-os)
 
 
+
+## Como rodar a aplicação :computer: ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)
+
+### Instale:
+1. Uma IDE (ambiente de desenvolvimento integrado)
+2. SQlite3
+3. Python 3
+4. Flask
+5. CS50 library
+6. Clone o projeto
 
 ## Licença ![favicon](https://user-images.githubusercontent.com/69127182/102274227-48df2480-3f02-11eb-8134-e8fe6643f697.png)
 
