@@ -63,12 +63,12 @@
 
 
 
-### Resultado de cadastro com sucesso: :point_down:
+### Resultado - Cadastro com sucesso: :point_down:
 ![sucess](https://user-images.githubusercontent.com/69127182/102273247-ca35b780-3f00-11eb-9f51-e23223aecbab.png)
 
 
 
-### Resultado caso houver problemas no cadastro: :point_down:
+### Resultado - Preenchimento incorreto do cadastro: :point_down:
 ![give-alert](https://user-images.githubusercontent.com/69127182/102273590-521bc180-3f01-11eb-99b1-9af33494cca3.png)
 
 
@@ -82,6 +82,8 @@
 ### Resultado sem conteúdo: :point_down:
 ![search-empty](https://user-images.githubusercontent.com/69127182/102273056-8347c200-3f00-11eb-9935-6f93416e5364.png)
 
+### Tema das abas das funcionalidades no computador :point_down:
+![aba_favicon](https://user-images.githubusercontent.com/69127182/102392612-0f67f100-3fb6-11eb-9f8d-7d3070447545.png)
 
 ## Layout responsivo :iphone:
 ![layout-responsivo](https://user-images.githubusercontent.com/69127182/102388676-d8dba780-3fb0-11eb-8a44-63e494b77a15.png)
