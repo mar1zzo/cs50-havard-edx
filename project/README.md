@@ -83,7 +83,7 @@
 ![search-empty](https://user-images.githubusercontent.com/69127182/102273056-8347c200-3f00-11eb-9935-6f93416e5364.png)
 
 ### Tema das abas das funcionalidades no computador :point_down:
-![aba_favicon](https://user-images.githubusercontent.com/69127182/102392612-0f67f100-3fb6-11eb-9f8d-7d3070447545.png)
+![aba-favicon](https://user-images.githubusercontent.com/69127182/102420929-03922400-3fe2-11eb-8346-62b220c29435.png)
 
 ## Layout responsivo :iphone:
 ![layout-responsivo](https://user-images.githubusercontent.com/69127182/102388676-d8dba780-3fb0-11eb-8a44-63e494b77a15.png)
